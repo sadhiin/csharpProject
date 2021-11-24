@@ -1,7 +1,7 @@
 ﻿
 namespace HospitalMgnt
 {
-    partial class Form1
+    partial class HomePage
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@ namespace HospitalMgnt
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
             this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
@@ -40,15 +40,16 @@ namespace HospitalMgnt
             this.panel1.Size = new System.Drawing.Size(760, 101);
             this.panel1.TabIndex = 0;
             // 
-            // Form1
+            // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1118, 604);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "HomePage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Home";
             this.ResumeLayout(false);
 
         }
