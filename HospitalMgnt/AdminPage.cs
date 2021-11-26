@@ -55,8 +55,8 @@ namespace HospitalMgnt
 
         private void buttonAdd_MouseLeave(object sender, EventArgs e)
         {
-             panel_Add.Size = panel_Add.MinimumSize;
-             buttonAdd.Image = Resources.addImage;
+            //panel_Add.Size = panel_Add.MinimumSize;
+            buttonAdd.Image = Resources.addImage;
         }
         private void buttonAdd_Click(object sender, EventArgs e)
         {
@@ -99,7 +99,7 @@ namespace HospitalMgnt
         }
         private void buttonUpdate_MouseLeave(object sender, EventArgs e)
         {
-            panel_Update.Size = panel_Update.MinimumSize;
+            //panel_Update.Size = panel_Update.MinimumSize;
             buttonUpdate.Image = Resources.update;   
         }
         private void buttonUpdate_Click(object sender, EventArgs e)
@@ -141,8 +141,8 @@ namespace HospitalMgnt
 
         private void buttonDelete_MouseLeave(object sender, EventArgs e)
         {
+            //panel_Delete.Size = panel_Delete.MinimumSize;
             buttonDelete.Image = Resources.delete;
-            panel_Delete.Size = panel_Delete.MinimumSize;
         }
         private void buttonDelete_Click(object sender, EventArgs e)
         {
@@ -185,7 +185,7 @@ namespace HospitalMgnt
 
         private void buttonFind_MouseLeave(object sender, EventArgs e)
         {
-            panel_Find.Size = panel_Find.MinimumSize;
+            //panel_Find.Size = panel_Find.MinimumSize;
             buttonFind.Image = Resources.find;
         }
 
@@ -193,5 +193,10 @@ namespace HospitalMgnt
         {
             timer_FindPanel.Start();
         }//Functionality for Find button END here...
+
+        private void button_Doctor_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
