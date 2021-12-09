@@ -95,11 +95,11 @@ namespace HospitalMgnt
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(171, 57);
+            this.dataGridView1.Location = new System.Drawing.Point(336, 80);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(587, 400);
+            this.dataGridView1.Size = new System.Drawing.Size(622, 395);
             this.dataGridView1.TabIndex = 2;
             // 
             // button_Ok
@@ -149,7 +149,7 @@ namespace HospitalMgnt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(760, 537);
+            this.ClientSize = new System.Drawing.Size(959, 602);
             this.Controls.Add(this.button_Close);
             this.Controls.Add(this.button_OK_Conti);
             this.Controls.Add(this.button_Ok);

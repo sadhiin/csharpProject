@@ -8,14 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HospitalMgnt
+namespace HMS
 {
-    public partial class HomePage : Form
+    public partial class AdminPage : Form
     {
-        public HomePage()
+        public AdminPage()
         {
             InitializeComponent();
         }
 
+        private void button_Doctor_Click(object sender, EventArgs e)
+        {
+            DoctorInfo doctorInfo = new DoctorInfo();
+            this.Hide();
+            doctorInfo.Show();
+        }
     }
 }

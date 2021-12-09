@@ -7,7 +7,6 @@ E:\CsharpProject\HospitalMgnt\bin\Debug\net5.0-windows\ref\HospitalMgnt.dll
 E:\CsharpProject\HospitalMgnt\bin\Debug\net5.0-windows\HospitalMgnt.pdb
 E:\CsharpProject\HospitalMgnt\obj\Debug\net5.0-windows\HospitalMgnt.csproj.AssemblyReference.cache
 E:\CsharpProject\HospitalMgnt\obj\Debug\net5.0-windows\HospitalMgnt.AdminPage.resources
-E:\CsharpProject\HospitalMgnt\obj\Debug\net5.0-windows\HospitalMgnt.HomePage.resources
 E:\CsharpProject\HospitalMgnt\obj\Debug\net5.0-windows\HospitalMgnt.Properties.Resources.resources
 E:\CsharpProject\HospitalMgnt\obj\Debug\net5.0-windows\HospitalMgnt.csproj.GenerateResource.cache
 E:\CsharpProject\HospitalMgnt\obj\Debug\net5.0-windows\HospitalMgnt.GeneratedMSBuildEditorConfig.editorconfig
@@ -18,3 +17,4 @@ E:\CsharpProject\HospitalMgnt\obj\Debug\net5.0-windows\HospitalMgnt.dll
 E:\CsharpProject\HospitalMgnt\obj\Debug\net5.0-windows\ref\HospitalMgnt.dll
 E:\CsharpProject\HospitalMgnt\obj\Debug\net5.0-windows\HospitalMgnt.pdb
 E:\CsharpProject\HospitalMgnt\obj\Debug\net5.0-windows\HospitalMgnt.genruntimeconfig.cache
+E:\CsharpProject\HospitalMgnt\obj\Debug\net5.0-windows\HospitalMgnt.InfoDoctor.resources
