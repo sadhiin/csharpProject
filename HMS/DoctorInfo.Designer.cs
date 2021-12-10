@@ -51,6 +51,8 @@ namespace HMS
             this.button_update = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
             this.button_find = new System.Windows.Forms.Button();
+            this.dataGridView_docInfo = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_docInfo)).BeginInit();
             this.SuspendLayout();
             // 
             // label_doctorID
@@ -75,7 +77,7 @@ namespace HMS
             // 
             this.label_doctorUsername.AutoSize = true;
             this.label_doctorUsername.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_doctorUsername.Location = new System.Drawing.Point(352, 114);
+            this.label_doctorUsername.Location = new System.Drawing.Point(357, 73);
             this.label_doctorUsername.Name = "label_doctorUsername";
             this.label_doctorUsername.Size = new System.Drawing.Size(92, 36);
             this.label_doctorUsername.TabIndex = 0;
@@ -84,7 +86,7 @@ namespace HMS
             // textBox_docName
             // 
             this.textBox_docName.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox_docName.Location = new System.Drawing.Point(496, 106);
+            this.textBox_docName.Location = new System.Drawing.Point(501, 65);
             this.textBox_docName.Name = "textBox_docName";
             this.textBox_docName.Size = new System.Drawing.Size(382, 44);
             this.textBox_docName.TabIndex = 1;
@@ -93,7 +95,7 @@ namespace HMS
             // 
             this.label_doctorAddress.AutoSize = true;
             this.label_doctorAddress.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_doctorAddress.Location = new System.Drawing.Point(352, 210);
+            this.label_doctorAddress.Location = new System.Drawing.Point(357, 169);
             this.label_doctorAddress.Name = "label_doctorAddress";
             this.label_doctorAddress.Size = new System.Drawing.Size(120, 36);
             this.label_doctorAddress.TabIndex = 0;
@@ -102,7 +104,7 @@ namespace HMS
             // textBox_docAddress
             // 
             this.textBox_docAddress.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox_docAddress.Location = new System.Drawing.Point(496, 209);
+            this.textBox_docAddress.Location = new System.Drawing.Point(501, 168);
             this.textBox_docAddress.Name = "textBox_docAddress";
             this.textBox_docAddress.Size = new System.Drawing.Size(382, 44);
             this.textBox_docAddress.TabIndex = 1;
@@ -111,7 +113,7 @@ namespace HMS
             // 
             this.label_doctorPhone.AutoSize = true;
             this.label_doctorPhone.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_doctorPhone.Location = new System.Drawing.Point(352, 264);
+            this.label_doctorPhone.Location = new System.Drawing.Point(357, 223);
             this.label_doctorPhone.Name = "label_doctorPhone";
             this.label_doctorPhone.Size = new System.Drawing.Size(98, 36);
             this.label_doctorPhone.TabIndex = 0;
@@ -120,7 +122,7 @@ namespace HMS
             // textBox_docPhone
             // 
             this.textBox_docPhone.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox_docPhone.Location = new System.Drawing.Point(496, 261);
+            this.textBox_docPhone.Location = new System.Drawing.Point(501, 220);
             this.textBox_docPhone.Name = "textBox_docPhone";
             this.textBox_docPhone.Size = new System.Drawing.Size(280, 44);
             this.textBox_docPhone.TabIndex = 1;
@@ -129,7 +131,7 @@ namespace HMS
             // 
             this.label_doctorEmail.AutoSize = true;
             this.label_doctorEmail.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_doctorEmail.Location = new System.Drawing.Point(352, 316);
+            this.label_doctorEmail.Location = new System.Drawing.Point(357, 275);
             this.label_doctorEmail.Name = "label_doctorEmail";
             this.label_doctorEmail.Size = new System.Drawing.Size(87, 36);
             this.label_doctorEmail.TabIndex = 0;
@@ -138,7 +140,7 @@ namespace HMS
             // textBox_docEmail
             // 
             this.textBox_docEmail.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox_docEmail.Location = new System.Drawing.Point(496, 315);
+            this.textBox_docEmail.Location = new System.Drawing.Point(501, 274);
             this.textBox_docEmail.Name = "textBox_docEmail";
             this.textBox_docEmail.Size = new System.Drawing.Size(382, 44);
             this.textBox_docEmail.TabIndex = 1;
@@ -147,7 +149,7 @@ namespace HMS
             // 
             this.label_doctorNID.AutoSize = true;
             this.label_doctorNID.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_doctorNID.Location = new System.Drawing.Point(352, 366);
+            this.label_doctorNID.Location = new System.Drawing.Point(357, 325);
             this.label_doctorNID.Name = "label_doctorNID";
             this.label_doctorNID.Size = new System.Drawing.Size(66, 36);
             this.label_doctorNID.TabIndex = 0;
@@ -156,7 +158,7 @@ namespace HMS
             // textBox_docNID
             // 
             this.textBox_docNID.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox_docNID.Location = new System.Drawing.Point(496, 369);
+            this.textBox_docNID.Location = new System.Drawing.Point(501, 328);
             this.textBox_docNID.Name = "textBox_docNID";
             this.textBox_docNID.Size = new System.Drawing.Size(382, 44);
             this.textBox_docNID.TabIndex = 1;
@@ -165,7 +167,7 @@ namespace HMS
             // 
             this.label_doctroSchedule.AutoSize = true;
             this.label_doctroSchedule.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_doctroSchedule.Location = new System.Drawing.Point(352, 424);
+            this.label_doctroSchedule.Location = new System.Drawing.Point(357, 383);
             this.label_doctroSchedule.Name = "label_doctroSchedule";
             this.label_doctroSchedule.Size = new System.Drawing.Size(136, 36);
             this.label_doctroSchedule.TabIndex = 0;
@@ -175,7 +177,7 @@ namespace HMS
             // 
             this.label_doctorGender.AutoSize = true;
             this.label_doctorGender.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_doctorGender.Location = new System.Drawing.Point(352, 159);
+            this.label_doctorGender.Location = new System.Drawing.Point(357, 118);
             this.label_doctorGender.Name = "label_doctorGender";
             this.label_doctorGender.Size = new System.Drawing.Size(112, 36);
             this.label_doctorGender.TabIndex = 2;
@@ -189,7 +191,7 @@ namespace HMS
             "Male",
             "Female",
             "Others"});
-            this.comboBox_docGender.Location = new System.Drawing.Point(496, 155);
+            this.comboBox_docGender.Location = new System.Drawing.Point(501, 114);
             this.comboBox_docGender.Name = "comboBox_docGender";
             this.comboBox_docGender.Size = new System.Drawing.Size(185, 44);
             this.comboBox_docGender.TabIndex = 3;
@@ -212,7 +214,7 @@ namespace HMS
             "1",
             "2",
             "3"});
-            this.comboBox_docSchedule.Location = new System.Drawing.Point(522, 423);
+            this.comboBox_docSchedule.Location = new System.Drawing.Point(527, 382);
             this.comboBox_docSchedule.Name = "comboBox_docSchedule";
             this.comboBox_docSchedule.Size = new System.Drawing.Size(151, 44);
             this.comboBox_docSchedule.TabIndex = 5;
@@ -222,45 +224,48 @@ namespace HMS
             this.button_add.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button_add.Image = global::HMS.Properties.Resources.addImage;
             this.button_add.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button_add.Location = new System.Drawing.Point(55, 507);
+            this.button_add.Location = new System.Drawing.Point(12, 190);
             this.button_add.Name = "button_add";
             this.button_add.Size = new System.Drawing.Size(135, 52);
             this.button_add.TabIndex = 20;
             this.button_add.Text = "Add";
             this.button_add.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_add.UseVisualStyleBackColor = true;
+            this.button_add.Click += new System.EventHandler(this.button_add_Click);
             // 
             // button_Delete
             // 
             this.button_Delete.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button_Delete.Image = global::HMS.Properties.Resources.delete;
             this.button_Delete.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button_Delete.Location = new System.Drawing.Point(228, 507);
+            this.button_Delete.Location = new System.Drawing.Point(153, 259);
             this.button_Delete.Name = "button_Delete";
             this.button_Delete.Size = new System.Drawing.Size(147, 52);
             this.button_Delete.TabIndex = 23;
             this.button_Delete.Text = "Delete";
             this.button_Delete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_Delete.UseVisualStyleBackColor = true;
+            this.button_Delete.Click += new System.EventHandler(this.button_Delete_Click);
             // 
             // button_update
             // 
             this.button_update.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button_update.Image = global::HMS.Properties.Resources.update;
             this.button_update.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button_update.Location = new System.Drawing.Point(420, 507);
+            this.button_update.Location = new System.Drawing.Point(153, 190);
             this.button_update.Name = "button_update";
             this.button_update.Size = new System.Drawing.Size(170, 52);
             this.button_update.TabIndex = 22;
             this.button_update.Text = "Update";
             this.button_update.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_update.UseVisualStyleBackColor = true;
+            this.button_update.Click += new System.EventHandler(this.button_update_Click);
             // 
             // buttonClose
             // 
             this.buttonClose.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonClose.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonClose.Location = new System.Drawing.Point(995, 582);
+            this.buttonClose.Location = new System.Drawing.Point(92, 332);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(109, 40);
             this.buttonClose.TabIndex = 24;
@@ -273,20 +278,32 @@ namespace HMS
             this.button_find.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button_find.Image = global::HMS.Properties.Resources.find;
             this.button_find.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button_find.Location = new System.Drawing.Point(669, 507);
+            this.button_find.Location = new System.Drawing.Point(12, 259);
             this.button_find.Name = "button_find";
             this.button_find.Size = new System.Drawing.Size(128, 52);
             this.button_find.TabIndex = 25;
             this.button_find.Text = "Find";
             this.button_find.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_find.UseVisualStyleBackColor = true;
+            this.button_find.Click += new System.EventHandler(this.button_find_Click);
+            // 
+            // dataGridView_docInfo
+            // 
+            this.dataGridView_docInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_docInfo.Location = new System.Drawing.Point(12, 460);
+            this.dataGridView_docInfo.Name = "dataGridView_docInfo";
+            this.dataGridView_docInfo.RowHeadersWidth = 51;
+            this.dataGridView_docInfo.RowTemplate.Height = 29;
+            this.dataGridView_docInfo.Size = new System.Drawing.Size(1093, 249);
+            this.dataGridView_docInfo.TabIndex = 26;
             // 
             // DoctorInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::HMS.Properties.Resources.doc_21;
-            this.ClientSize = new System.Drawing.Size(1110, 630);
+            this.ClientSize = new System.Drawing.Size(1121, 721);
+            this.Controls.Add(this.dataGridView_docInfo);
             this.Controls.Add(this.button_find);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.button_Delete);
@@ -317,6 +334,8 @@ namespace HMS
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DoctorInfo";
+            this.Load += new System.EventHandler(this.DoctorInfo_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_docInfo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -346,5 +365,6 @@ namespace HMS
         private System.Windows.Forms.Button button_update;
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.Button button_find;
+        private System.Windows.Forms.DataGridView dataGridView_docInfo;
     }
 }
