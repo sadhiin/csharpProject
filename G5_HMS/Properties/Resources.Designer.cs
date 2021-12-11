@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HMS.Properties {
+namespace G5_HMS.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace HMS.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("HMS.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("G5_HMS.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -83,19 +83,9 @@ namespace HMS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap delete {
+        internal static System.Drawing.Bitmap doc_2 {
             get {
-                object obj = ResourceManager.GetObject("delete", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap doc_21 {
-            get {
-                object obj = ResourceManager.GetObject("doc-21", resourceCulture);
+                object obj = ResourceManager.GetObject("doc_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +113,9 @@ namespace HMS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap find {
+        internal static System.Drawing.Bitmap icons8_delete_document_48 {
             get {
-                object obj = ResourceManager.GetObject("find", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_delete_document_48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +123,19 @@ namespace HMS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap laboratory {
+        internal static System.Drawing.Bitmap icons8_find_user_male_48 {
             get {
-                object obj = ResourceManager.GetObject("laboratory", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_find_user_male_48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lab {
+            get {
+                object obj = ResourceManager.GetObject("lab", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -52,6 +52,8 @@ namespace HMS
             this.buttonClose = new System.Windows.Forms.Button();
             this.button_find = new System.Windows.Forms.Button();
             this.dataGridView_docInfo = new System.Windows.Forms.DataGridView();
+            this.textBox_docPassword = new System.Windows.Forms.TextBox();
+            this.label_docPassword = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_docInfo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,7 +61,7 @@ namespace HMS
             // 
             this.label_doctorID.AutoSize = true;
             this.label_doctorID.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_doctorID.Location = new System.Drawing.Point(139, 73);
+            this.label_doctorID.Location = new System.Drawing.Point(12, 81);
             this.label_doctorID.Name = "label_doctorID";
             this.label_doctorID.Size = new System.Drawing.Size(46, 36);
             this.label_doctorID.TabIndex = 0;
@@ -68,7 +70,7 @@ namespace HMS
             // textBox_docID
             // 
             this.textBox_docID.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox_docID.Location = new System.Drawing.Point(130, 114);
+            this.textBox_docID.Location = new System.Drawing.Point(3, 122);
             this.textBox_docID.Name = "textBox_docID";
             this.textBox_docID.Size = new System.Drawing.Size(164, 44);
             this.textBox_docID.TabIndex = 1;
@@ -77,7 +79,7 @@ namespace HMS
             // 
             this.label_doctorUsername.AutoSize = true;
             this.label_doctorUsername.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_doctorUsername.Location = new System.Drawing.Point(357, 73);
+            this.label_doctorUsername.Location = new System.Drawing.Point(515, 81);
             this.label_doctorUsername.Name = "label_doctorUsername";
             this.label_doctorUsername.Size = new System.Drawing.Size(92, 36);
             this.label_doctorUsername.TabIndex = 0;
@@ -86,7 +88,7 @@ namespace HMS
             // textBox_docName
             // 
             this.textBox_docName.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox_docName.Location = new System.Drawing.Point(501, 65);
+            this.textBox_docName.Location = new System.Drawing.Point(659, 73);
             this.textBox_docName.Name = "textBox_docName";
             this.textBox_docName.Size = new System.Drawing.Size(382, 44);
             this.textBox_docName.TabIndex = 1;
@@ -95,7 +97,7 @@ namespace HMS
             // 
             this.label_doctorAddress.AutoSize = true;
             this.label_doctorAddress.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_doctorAddress.Location = new System.Drawing.Point(357, 169);
+            this.label_doctorAddress.Location = new System.Drawing.Point(515, 177);
             this.label_doctorAddress.Name = "label_doctorAddress";
             this.label_doctorAddress.Size = new System.Drawing.Size(120, 36);
             this.label_doctorAddress.TabIndex = 0;
@@ -104,7 +106,7 @@ namespace HMS
             // textBox_docAddress
             // 
             this.textBox_docAddress.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox_docAddress.Location = new System.Drawing.Point(501, 168);
+            this.textBox_docAddress.Location = new System.Drawing.Point(659, 176);
             this.textBox_docAddress.Name = "textBox_docAddress";
             this.textBox_docAddress.Size = new System.Drawing.Size(382, 44);
             this.textBox_docAddress.TabIndex = 1;
@@ -113,7 +115,7 @@ namespace HMS
             // 
             this.label_doctorPhone.AutoSize = true;
             this.label_doctorPhone.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_doctorPhone.Location = new System.Drawing.Point(357, 223);
+            this.label_doctorPhone.Location = new System.Drawing.Point(515, 231);
             this.label_doctorPhone.Name = "label_doctorPhone";
             this.label_doctorPhone.Size = new System.Drawing.Size(98, 36);
             this.label_doctorPhone.TabIndex = 0;
@@ -122,7 +124,7 @@ namespace HMS
             // textBox_docPhone
             // 
             this.textBox_docPhone.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox_docPhone.Location = new System.Drawing.Point(501, 220);
+            this.textBox_docPhone.Location = new System.Drawing.Point(659, 228);
             this.textBox_docPhone.Name = "textBox_docPhone";
             this.textBox_docPhone.Size = new System.Drawing.Size(280, 44);
             this.textBox_docPhone.TabIndex = 1;
@@ -131,7 +133,7 @@ namespace HMS
             // 
             this.label_doctorEmail.AutoSize = true;
             this.label_doctorEmail.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_doctorEmail.Location = new System.Drawing.Point(357, 275);
+            this.label_doctorEmail.Location = new System.Drawing.Point(515, 283);
             this.label_doctorEmail.Name = "label_doctorEmail";
             this.label_doctorEmail.Size = new System.Drawing.Size(87, 36);
             this.label_doctorEmail.TabIndex = 0;
@@ -140,7 +142,7 @@ namespace HMS
             // textBox_docEmail
             // 
             this.textBox_docEmail.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox_docEmail.Location = new System.Drawing.Point(501, 274);
+            this.textBox_docEmail.Location = new System.Drawing.Point(659, 282);
             this.textBox_docEmail.Name = "textBox_docEmail";
             this.textBox_docEmail.Size = new System.Drawing.Size(382, 44);
             this.textBox_docEmail.TabIndex = 1;
@@ -149,7 +151,7 @@ namespace HMS
             // 
             this.label_doctorNID.AutoSize = true;
             this.label_doctorNID.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_doctorNID.Location = new System.Drawing.Point(357, 325);
+            this.label_doctorNID.Location = new System.Drawing.Point(515, 333);
             this.label_doctorNID.Name = "label_doctorNID";
             this.label_doctorNID.Size = new System.Drawing.Size(66, 36);
             this.label_doctorNID.TabIndex = 0;
@@ -158,7 +160,7 @@ namespace HMS
             // textBox_docNID
             // 
             this.textBox_docNID.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox_docNID.Location = new System.Drawing.Point(501, 328);
+            this.textBox_docNID.Location = new System.Drawing.Point(659, 336);
             this.textBox_docNID.Name = "textBox_docNID";
             this.textBox_docNID.Size = new System.Drawing.Size(382, 44);
             this.textBox_docNID.TabIndex = 1;
@@ -167,7 +169,7 @@ namespace HMS
             // 
             this.label_doctroSchedule.AutoSize = true;
             this.label_doctroSchedule.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_doctroSchedule.Location = new System.Drawing.Point(357, 383);
+            this.label_doctroSchedule.Location = new System.Drawing.Point(515, 391);
             this.label_doctroSchedule.Name = "label_doctroSchedule";
             this.label_doctroSchedule.Size = new System.Drawing.Size(136, 36);
             this.label_doctroSchedule.TabIndex = 0;
@@ -177,7 +179,7 @@ namespace HMS
             // 
             this.label_doctorGender.AutoSize = true;
             this.label_doctorGender.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_doctorGender.Location = new System.Drawing.Point(357, 118);
+            this.label_doctorGender.Location = new System.Drawing.Point(515, 126);
             this.label_doctorGender.Name = "label_doctorGender";
             this.label_doctorGender.Size = new System.Drawing.Size(112, 36);
             this.label_doctorGender.TabIndex = 2;
@@ -191,7 +193,7 @@ namespace HMS
             "Male",
             "Female",
             "Others"});
-            this.comboBox_docGender.Location = new System.Drawing.Point(501, 114);
+            this.comboBox_docGender.Location = new System.Drawing.Point(659, 122);
             this.comboBox_docGender.Name = "comboBox_docGender";
             this.comboBox_docGender.Size = new System.Drawing.Size(185, 44);
             this.comboBox_docGender.TabIndex = 3;
@@ -214,7 +216,7 @@ namespace HMS
             "1",
             "2",
             "3"});
-            this.comboBox_docSchedule.Location = new System.Drawing.Point(527, 382);
+            this.comboBox_docSchedule.Location = new System.Drawing.Point(685, 390);
             this.comboBox_docSchedule.Name = "comboBox_docSchedule";
             this.comboBox_docSchedule.Size = new System.Drawing.Size(151, 44);
             this.comboBox_docSchedule.TabIndex = 5;
@@ -297,12 +299,32 @@ namespace HMS
             this.dataGridView_docInfo.Size = new System.Drawing.Size(1093, 249);
             this.dataGridView_docInfo.TabIndex = 26;
             // 
+            // textBox_docPassword
+            // 
+            this.textBox_docPassword.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox_docPassword.Location = new System.Drawing.Point(207, 122);
+            this.textBox_docPassword.Name = "textBox_docPassword";
+            this.textBox_docPassword.Size = new System.Drawing.Size(227, 44);
+            this.textBox_docPassword.TabIndex = 28;
+            // 
+            // label_docPassword
+            // 
+            this.label_docPassword.AutoSize = true;
+            this.label_docPassword.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_docPassword.Location = new System.Drawing.Point(216, 81);
+            this.label_docPassword.Name = "label_docPassword";
+            this.label_docPassword.Size = new System.Drawing.Size(140, 36);
+            this.label_docPassword.TabIndex = 27;
+            this.label_docPassword.Text = "Password";
+            // 
             // DoctorInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::HMS.Properties.Resources.doc_21;
             this.ClientSize = new System.Drawing.Size(1121, 721);
+            this.Controls.Add(this.textBox_docPassword);
+            this.Controls.Add(this.label_docPassword);
             this.Controls.Add(this.dataGridView_docInfo);
             this.Controls.Add(this.button_find);
             this.Controls.Add(this.buttonClose);
@@ -366,5 +388,7 @@ namespace HMS
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.Button button_find;
         private System.Windows.Forms.DataGridView dataGridView_docInfo;
+        private System.Windows.Forms.TextBox textBox_docPassword;
+        private System.Windows.Forms.Label label_docPassword;
     }
 }
