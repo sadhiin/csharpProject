@@ -50,7 +50,7 @@ namespace G5_HMS
                         else if (rd[2].ToString() == "2")
                         {
                             //user is doctor
-                            MessageBox.Show("Redirecting to you Account 😊 \n\r You must be the doctor", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Redirecting to you Account 😊 \n\r You must be the doctor", "Success  Message",MessageBoxButtons.OK, MessageBoxIcon.Information);
                             rd.Read();
                             Application.Exit();
                         }
@@ -59,6 +59,7 @@ namespace G5_HMS
                     {
                         MessageBox.Show("Invalid Credential", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
+                    DB.connection.Close();
                 }
                 catch (Exception ex)
                 {

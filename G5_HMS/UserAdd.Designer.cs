@@ -219,10 +219,13 @@ namespace G5_HMS
             // 
             // dataGridView_userAdd
             // 
+            this.dataGridView_userAdd.AllowUserToAddRows = false;
+            this.dataGridView_userAdd.AllowUserToDeleteRows = false;
             this.dataGridView_userAdd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_userAdd.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dataGridView_userAdd.Location = new System.Drawing.Point(0, 428);
             this.dataGridView_userAdd.Name = "dataGridView_userAdd";
+            this.dataGridView_userAdd.ReadOnly = true;
             this.dataGridView_userAdd.RowHeadersWidth = 51;
             this.dataGridView_userAdd.RowTemplate.Height = 24;
             this.dataGridView_userAdd.Size = new System.Drawing.Size(1178, 284);
@@ -267,6 +270,7 @@ namespace G5_HMS
             this.button_find_user.TabIndex = 9;
             this.button_find_user.Text = "Find User";
             this.button_find_user.UseVisualStyleBackColor = true;
+            this.button_find_user.Click += new System.EventHandler(this.button_find_user_Click);
             // 
             // textBox_User_id
             // 

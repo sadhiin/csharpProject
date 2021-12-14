@@ -245,7 +245,7 @@ namespace G5_HMS
         private void dataGridView_userAdd_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             dataGridView_userAdd.CurrentRow.Selected = true;
-            textBox_User_id.Text = dataGridView_userAdd.Rows[e.RowIndex].Cells[0].Value.ToString();
+            //textBox_User_id.Text = dataGridView_userAdd.Rows[e.RowIndex].Cells[0].Value.ToString();
             textBox_password.Text = dataGridView_userAdd.Rows[e.RowIndex].Cells[1].Value.ToString();
             comboBox_user_type.Text = dataGridView_userAdd.Rows[e.RowIndex].Cells[2].Value.ToString();
             textBox_name.Text = dataGridView_userAdd.Rows[e.RowIndex].Cells[3].Value.ToString();
@@ -254,6 +254,47 @@ namespace G5_HMS
             textBox_contract.Text = dataGridView_userAdd.Rows[e.RowIndex].Cells[6].Value.ToString();
             textBox_nid.Text = dataGridView_userAdd.Rows[e.RowIndex].Cells[7].Value.ToString();
             comboBox_schedule.Text = dataGridView_userAdd.Rows[e.RowIndex].Cells[8].Value.ToString();
+        }
+
+        private void button_find_user_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(textBox_User_id.Text))
+            {
+                MyConnection DB = new MyConnection();
+                SqlCommand cmd;
+                try
+                {
+                    cmd = new SqlCommand("SELECT * FROM user_table WHERE user_id=@id", DB.connection);
+                    DB.connection.Open();
+                    cmd.Parameters.AddWithValue("@id", textBox_User_id.Text);
+                    cmd.ExecuteNonQuery();
+                    DataTable dt = new DataTable();
+                    SqlDataReader sdr = cmd.ExecuteReader();
+                    if (sdr.HasRows)
+                    {
+                        dt.Load(sdr);
+                        dataGridView_userAdd.DataSource = dt;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Not found");
+                    }
+                    DB.connection.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Something wentwrong in Find", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    DB.connection.Close();
+                    clearTextBoxs();
+                }
+            }
+            else
+            {
+                MessageBox.Show("ID is missing");
+            }
         }
     }
 }

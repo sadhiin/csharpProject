@@ -32,11 +32,11 @@ namespace G5_HMS
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminPage));
             this.panel_AdminPageTop = new System.Windows.Forms.Panel();
             this.label_adminWellcome = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView_adminPage = new System.Windows.Forms.DataGridView();
             this.button_Doctor = new System.Windows.Forms.Button();
             this.button_admin_logout = new System.Windows.Forms.Button();
             this.panel_AdminPageTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_adminPage)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_AdminPageTop
@@ -59,16 +59,18 @@ namespace G5_HMS
             this.label_adminWellcome.TabIndex = 0;
             this.label_adminWellcome.Text = "Welcome Admin";
             // 
-            // dataGridView1
+            // dataGridView_adminPage
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(259, 292);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1105, 440);
-            this.dataGridView1.TabIndex = 2;
+            this.dataGridView_adminPage.AllowUserToAddRows = false;
+            this.dataGridView_adminPage.AllowUserToDeleteRows = false;
+            this.dataGridView_adminPage.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_adminPage.Location = new System.Drawing.Point(259, 292);
+            this.dataGridView_adminPage.Name = "dataGridView_adminPage";
+            this.dataGridView_adminPage.ReadOnly = true;
+            this.dataGridView_adminPage.RowHeadersWidth = 51;
+            this.dataGridView_adminPage.RowTemplate.Height = 24;
+            this.dataGridView_adminPage.Size = new System.Drawing.Size(1105, 440);
+            this.dataGridView_adminPage.TabIndex = 2;
             // 
             // button_Doctor
             // 
@@ -101,7 +103,7 @@ namespace G5_HMS
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1364, 735);
             this.Controls.Add(this.button_admin_logout);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridView_adminPage);
             this.Controls.Add(this.button_Doctor);
             this.Controls.Add(this.panel_AdminPageTop);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -109,9 +111,10 @@ namespace G5_HMS
             this.Name = "AdminPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminPage";
+            this.Load += new System.EventHandler(this.AdminPage_Load);
             this.panel_AdminPageTop.ResumeLayout(false);
             this.panel_AdminPageTop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_adminPage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -120,7 +123,7 @@ namespace G5_HMS
 
         private System.Windows.Forms.Panel panel_AdminPageTop;
         private System.Windows.Forms.Label label_adminWellcome;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView_adminPage;
         private System.Windows.Forms.Button button_Doctor;
         private System.Windows.Forms.Button button_admin_logout;
     }

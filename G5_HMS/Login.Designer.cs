@@ -113,7 +113,7 @@ namespace G5_HMS
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(695, 383);
+            this.ClientSize = new System.Drawing.Size(713, 383);
             this.Controls.Add(this.button_close);
             this.Controls.Add(this.button_Login);
             this.Controls.Add(this.textBox_LoginPassword);
