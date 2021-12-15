@@ -41,18 +41,36 @@ namespace G5_HMS
                     {
                         MessageBox.Show("Redirecting to you Account 😊", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         rd.Read();
-                        if (rd[2].ToString() == "1")
+                        MyConnection.CurrentUserID=int.Parse(rd[2].ToString());
+                        int CUID = MyConnection.CurrentUserID;
+                        if (CUID == 1)
                         {
                             AdminPage adminPage = new AdminPage();
                             adminPage.Show();
                             this.Hide();
                         }
-                        else if (rd[2].ToString() == "2")
+                        else if (CUID == 2)
                         {
                             //user is doctor
-                            MessageBox.Show("Redirecting to you Account 😊 \n\r You must be the doctor", "Success  Message",MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            rd.Read();
-                            Application.Exit();
+                            DoctorPage doctor = new DoctorPage();
+                            doctor.Show();
+                            this.Hide();
+                        }
+                        else if (CUID == 3)
+                        {
+                            //user is nurse
+                        }
+                        else if (CUID == 4)
+                        {
+                            //user is laboratorian
+                        }
+                        else if (CUID == 5)
+                        {
+                            //user is receptionist
+                        }
+                        else if (CUID == 6)
+                        {
+                            //user is pharmacist
                         }
                     }
                     else

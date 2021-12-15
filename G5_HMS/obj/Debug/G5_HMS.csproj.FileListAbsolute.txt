@@ -10,3 +10,5 @@ E:\CsharpProject\G5_HMS\obj\Debug\G5_HMS.csproj.CoreCompileInputs.cache
 E:\CsharpProject\G5_HMS\obj\Debug\G5_HMS.exe
 E:\CsharpProject\G5_HMS\obj\Debug\G5_HMS.pdb
 E:\CsharpProject\G5_HMS\obj\Debug\G5_HMS.UserAdd.resources
+E:\CsharpProject\G5_HMS\obj\Debug\G5_HMS.DoctorPage.resources
+E:\CsharpProject\G5_HMS\obj\Debug\G5_HMS.updatePass.resources

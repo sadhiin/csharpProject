@@ -15,6 +15,6 @@ namespace G5_HMS
         {
             connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CC"].ConnectionString);
         }
-        public static string roleType = "";
+        public static int CurrentUserID;
     }
 }
