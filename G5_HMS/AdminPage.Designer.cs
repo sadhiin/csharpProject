@@ -35,6 +35,7 @@ namespace G5_HMS
             this.dataGridView_adminPage = new System.Windows.Forms.DataGridView();
             this.button_Doctor = new System.Windows.Forms.Button();
             this.button_admin_logout = new System.Windows.Forms.Button();
+            this.button_updatepass = new System.Windows.Forms.Button();
             this.panel_AdminPageTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_adminPage)).BeginInit();
             this.SuspendLayout();
@@ -97,11 +98,22 @@ namespace G5_HMS
             this.button_admin_logout.UseVisualStyleBackColor = false;
             this.button_admin_logout.Click += new System.EventHandler(this.button_admin_logout_Click);
             // 
+            // button_updatepass
+            // 
+            this.button_updatepass.Location = new System.Drawing.Point(12, 661);
+            this.button_updatepass.Name = "button_updatepass";
+            this.button_updatepass.Size = new System.Drawing.Size(142, 33);
+            this.button_updatepass.TabIndex = 4;
+            this.button_updatepass.Text = "Change Password";
+            this.button_updatepass.UseVisualStyleBackColor = true;
+            this.button_updatepass.Click += new System.EventHandler(this.button_updatepass_Click);
+            // 
             // AdminPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1364, 735);
+            this.Controls.Add(this.button_updatepass);
             this.Controls.Add(this.button_admin_logout);
             this.Controls.Add(this.dataGridView_adminPage);
             this.Controls.Add(this.button_Doctor);
@@ -126,5 +138,6 @@ namespace G5_HMS
         private System.Windows.Forms.DataGridView dataGridView_adminPage;
         private System.Windows.Forms.Button button_Doctor;
         private System.Windows.Forms.Button button_admin_logout;
+        private System.Windows.Forms.Button button_updatepass;
     }
 }

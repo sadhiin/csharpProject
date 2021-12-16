@@ -132,7 +132,7 @@ namespace G5_HMS
                 MessageBox.Show("ID is missing");
             }
         }
-
+        
         private void DoctorPage_Load(object sender, EventArgs e)
         {
             MyConnection DB = new MyConnection();
@@ -168,6 +168,13 @@ namespace G5_HMS
         {
             updatePass passUpdate = new updatePass();
             passUpdate.Show();
+        }
+
+        private void button_print_btn_Click(object sender, EventArgs e)
+        {
+            MyConnection.mypanel = panel_patient;
+            //printPage pp = new printPage();
+            //pp.Show();
         }
     }
 }

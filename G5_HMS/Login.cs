@@ -34,6 +34,7 @@ namespace G5_HMS
                     cmd = new SqlCommand("role_login", DB.connection);
                     cmd.CommandType = CommandType.StoredProcedure;
                     DB.connection.Open();
+                    int CUID = int.Parse(textBox_LoginID.Text);
                     cmd.Parameters.AddWithValue("@id", int.Parse(textBox_LoginID.Text));
                     cmd.Parameters.AddWithValue("@pass", textBox_LoginPassword.Text);
                     SqlDataReader rd = cmd.ExecuteReader();
@@ -41,34 +42,41 @@ namespace G5_HMS
                     {
                         MessageBox.Show("Redirecting to you Account 😊", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         rd.Read();
-                        MyConnection.CurrentUserID=int.Parse(rd[2].ToString());
-                        int CUID = MyConnection.CurrentUserID;
-                        if (CUID == 1)
+                        //MyConnection.CurrentUserID = int.Parse(rd[2].ToString());
+                        int type = int.Parse(rd[2].ToString());
+                        MyConnection.CurrentUserID = CUID;
+                        if (type == 1)
                         {
                             AdminPage adminPage = new AdminPage();
                             adminPage.Show();
                             this.Hide();
                         }
-                        else if (CUID == 2)
+                        else if (type == 2)
                         {
                             //user is doctor
                             DoctorPage doctor = new DoctorPage();
                             doctor.Show();
                             this.Hide();
                         }
-                        else if (CUID == 3)
+                        else if (type == 3)
                         {
-                            //user is nurse
+                            NursePage nurse = new NursePage();
+                            nurse.Show();
+                            this.Hide();
                         }
-                        else if (CUID == 4)
+                        else if (type == 4)
                         {
-                            //user is laboratorian
+                            Laboratorian laboratori = new Laboratorian();
+                            laboratori.Show();
+                            this.Hide();
                         }
-                        else if (CUID == 5)
+                        else if (type == 5)
                         {
-                            //user is receptionist
+                            ReceptionistPage reception = new ReceptionistPage();
+                            reception.Show();
+                            this.Hide();
                         }
-                        else if (CUID == 6)
+                        else if (type == 6)
                         {
                             //user is pharmacist
                         }

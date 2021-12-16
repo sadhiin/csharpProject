@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace G5_HMS
 {
@@ -16,5 +17,6 @@ namespace G5_HMS
             connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CC"].ConnectionString);
         }
         public static int CurrentUserID;
+        public static Panel mypanel;
     }
 }

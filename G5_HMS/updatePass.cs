@@ -29,16 +29,19 @@ namespace G5_HMS
             int ans = -1;
             try
             {
-                cmd = new SqlCommand("SELECT COUNT(*) FROM user_table WHERE user_id=@id AND user_pass=@currPass", DB.connection);
+                string q = "SELECT COUNT(*) FROM user_table WHERE user_id=@id AND user_pass=@currPass";
+                cmd = new SqlCommand(q, DB.connection);
                 DB.connection.Open();
                 cmd.Parameters.AddWithValue("@id", MyConnection.CurrentUserID);
                 cmd.Parameters.AddWithValue("@currPass", textBox1.Text);
                 SqlDataReader sdr = cmd.ExecuteReader();
-                ans =int.Parse(sdr.GetValue(0).ToString());
+                sdr.Read();
+                if(sdr.HasRows)
+                    ans =int.Parse(sdr.GetValue(0).ToString());
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message,"Error in old password", MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
             finally
             {
@@ -55,14 +58,21 @@ namespace G5_HMS
             //SqlCommand cmd;
             try
             {
-                string updatepass = "UPDATE user_table SET user_pass=@newpass WHERE user_id=@id";
-                DB.connection.Open();
-                SqlCommand newcmd = new SqlCommand(updatepass, DB.connection);
-                newcmd.Parameters.AddWithValue("@id", MyConnection.CurrentUserID);
-                newcmd.Parameters.AddWithValue("@newpass", textBox2.Text);
-                newcmd.ExecuteNonQuery();
-                DB.connection.Close();
-                MessageBox.Show("Password Updated");                 
+                if (checkOldpass())
+                {
+                    string updatepass = "UPDATE user_table SET user_pass=@newpass WHERE user_id=@id";
+                    DB.connection.Open();
+                    SqlCommand newcmd = new SqlCommand(updatepass, DB.connection);
+                    newcmd.Parameters.AddWithValue("@id", MyConnection.CurrentUserID);
+                    newcmd.Parameters.AddWithValue("@newpass", textBox2.Text);
+                    newcmd.ExecuteNonQuery();
+                    DB.connection.Close();
+                    MessageBox.Show("Password Updated");
+                }
+                else
+                {
+                    MessageBox.Show("Wrong password", "Password not updated", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             catch (Exception ex)
             {

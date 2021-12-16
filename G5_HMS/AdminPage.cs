@@ -58,5 +58,11 @@ namespace G5_HMS
         {
             showUsers();
         }
+
+        private void button_updatepass_Click(object sender, EventArgs e)
+        {
+            updatePass up = new updatePass();
+            up.Show();
+        }
     }
 }

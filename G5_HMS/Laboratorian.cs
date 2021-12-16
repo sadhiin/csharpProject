@@ -11,44 +11,11 @@ using System.Windows.Forms;
 
 namespace G5_HMS
 {
-    public partial class NursePage : Form
+    public partial class Laboratorian : Form
     {
-        public NursePage()
+        public Laboratorian()
         {
             InitializeComponent();
-        }
-
-        private void NursePage_Load(object sender, EventArgs e)
-        {
-            MyConnection DB = new MyConnection();
-            SqlCommand cmd;
-            try
-            {
-                cmd = new SqlCommand("SELECT name FROM user_table WHERE user_id = @id", DB.connection);
-                DB.connection.Open();
-                cmd.Parameters.AddWithValue("@id", MyConnection.CurrentUserID);
-                SqlDataReader sdr = cmd.ExecuteReader();
-                sdr.Read();
-                if (sdr.HasRows)
-                    label_nurseName.Text = sdr[0].ToString();
-                else
-                    label_nurseName.Text = "";
-                DB.connection.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                DB.connection.Close();
-            }
-        }
-
-        private void button_changePassword_Click(object sender, EventArgs e)
-        {
-            updatePass upass = new updatePass();
-            upass.Show();
         }
 
         private void button_find_Click(object sender, EventArgs e)
@@ -75,10 +42,8 @@ namespace G5_HMS
                         textBox_pName.Text = dataGridView1.Rows[0].Cells[1].Value.ToString();
                         comboBox_pGender.Text = dataGridView1.Rows[0].Cells[2].Value.ToString();
                         textBox_pContract.Text = dataGridView1.Rows[0].Cells[3].Value.ToString();
-                        textBox_pAddress.Text = dataGridView1.Rows[0].Cells[4].Value.ToString();
                         comboBox_pBlood.Text = dataGridView1.Rows[0].Cells[5].Value.ToString();
-                        textBox_pDisease.Text = dataGridView1.Rows[0].Cells[6].Value.ToString();
-                        textBox_drugs.Text = dataGridView1.Rows[0].Cells[7].Value.ToString();
+
                         textBox_tests.Text = dataGridView1.Rows[0].Cells[8].Value.ToString();
                     }
                     else
@@ -104,9 +69,43 @@ namespace G5_HMS
 
         private void button_dLogout_Click(object sender, EventArgs e)
         {
-            Login nLog = new Login();
-            nLog.Show();
+            Login lgin = new Login();
+            lgin.Show();
             this.Close();
+        }
+
+        private void button_changePassword_Click(object sender, EventArgs e)
+        {
+            updatePass chngPass = new updatePass();
+            chngPass.Show();
+        }
+
+        private void Laboratorian_Load(object sender, EventArgs e)
+        {
+            MyConnection DB = new MyConnection();
+            SqlCommand cmd;
+            try
+            {
+                DB.connection.Open();
+                string query = "SELECT name FROM user_table WHERE user_id= @id";
+                cmd = new SqlCommand(query, DB.connection);
+                cmd.Parameters.AddWithValue("@id", MyConnection.CurrentUserID);
+                SqlDataReader sdr = cmd.ExecuteReader();
+                sdr.Read();
+                if (sdr.HasRows)
+                    label_laboName.Text = sdr[0].ToString();
+                else
+                    label_laboName.Text = "";
+                DB.connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                DB.connection.Close();
+            }
         }
     }
 }

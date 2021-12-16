@@ -59,9 +59,11 @@ namespace G5_HMS
             this.label_docName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_top.SuspendLayout();
             this.panel_patient.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_top
@@ -71,14 +73,14 @@ namespace G5_HMS
             this.panel_top.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_top.Location = new System.Drawing.Point(0, 0);
             this.panel_top.Name = "panel_top";
-            this.panel_top.Size = new System.Drawing.Size(1198, 77);
+            this.panel_top.Size = new System.Drawing.Size(1036, 77);
             this.panel_top.TabIndex = 0;
             // 
             // label_top
             // 
             this.label_top.AutoSize = true;
             this.label_top.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_top.Location = new System.Drawing.Point(503, 13);
+            this.label_top.Location = new System.Drawing.Point(360, 9);
             this.label_top.Name = "label_top";
             this.label_top.Size = new System.Drawing.Size(239, 39);
             this.label_top.TabIndex = 0;
@@ -114,7 +116,7 @@ namespace G5_HMS
             this.panel_patient.Controls.Add(this.label_pContract);
             this.panel_patient.Controls.Add(this.label_pAddress);
             this.panel_patient.Controls.Add(this.label_pname);
-            this.panel_patient.Location = new System.Drawing.Point(389, 83);
+            this.panel_patient.Location = new System.Drawing.Point(256, 83);
             this.panel_patient.Name = "panel_patient";
             this.panel_patient.Size = new System.Drawing.Size(550, 529);
             this.panel_patient.TabIndex = 2;
@@ -161,7 +163,7 @@ namespace G5_HMS
             // button_save
             // 
             this.button_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.button_save.Location = new System.Drawing.Point(233, 486);
+            this.button_save.Location = new System.Drawing.Point(232, 486);
             this.button_save.Name = "button_save";
             this.button_save.Size = new System.Drawing.Size(75, 34);
             this.button_save.TabIndex = 3;
@@ -178,7 +180,7 @@ namespace G5_HMS
             "Male",
             "Female",
             "Others"});
-            this.comboBox_pGender.Location = new System.Drawing.Point(151, 103);
+            this.comboBox_pGender.Location = new System.Drawing.Point(150, 103);
             this.comboBox_pGender.Name = "comboBox_pGender";
             this.comboBox_pGender.Size = new System.Drawing.Size(155, 28);
             this.comboBox_pGender.TabIndex = 6;
@@ -288,7 +290,7 @@ namespace G5_HMS
             // 
             this.label_exitingPatient.AutoSize = true;
             this.label_exitingPatient.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_exitingPatient.Location = new System.Drawing.Point(1022, 94);
+            this.label_exitingPatient.Location = new System.Drawing.Point(808, 119);
             this.label_exitingPatient.Name = "label_exitingPatient";
             this.label_exitingPatient.Size = new System.Drawing.Size(116, 20);
             this.label_exitingPatient.TabIndex = 3;
@@ -297,7 +299,7 @@ namespace G5_HMS
             // textBox_pid
             // 
             this.textBox_pid.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.textBox_pid.Location = new System.Drawing.Point(1026, 117);
+            this.textBox_pid.Location = new System.Drawing.Point(812, 142);
             this.textBox_pid.Name = "textBox_pid";
             this.textBox_pid.Size = new System.Drawing.Size(121, 27);
             this.textBox_pid.TabIndex = 4;
@@ -305,7 +307,7 @@ namespace G5_HMS
             // button_find
             // 
             this.button_find.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.button_find.Location = new System.Drawing.Point(1046, 150);
+            this.button_find.Location = new System.Drawing.Point(832, 175);
             this.button_find.Name = "button_find";
             this.button_find.Size = new System.Drawing.Size(75, 33);
             this.button_find.TabIndex = 5;
@@ -355,7 +357,7 @@ namespace G5_HMS
             // 
             this.label_docName.AutoSize = true;
             this.label_docName.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_docName.Location = new System.Drawing.Point(81, 104);
+            this.label_docName.Location = new System.Drawing.Point(12, 259);
             this.label_docName.Name = "label_docName";
             this.label_docName.Size = new System.Drawing.Size(61, 23);
             this.label_docName.TabIndex = 8;
@@ -375,17 +377,28 @@ namespace G5_HMS
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(81, 146);
+            this.label2.Location = new System.Drawing.Point(14, 295);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(90, 23);
             this.label2.TabIndex = 8;
             this.label2.Text = "Good day";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(18, 130);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(171, 126);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
             // DoctorPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1198, 660);
+            this.ClientSize = new System.Drawing.Size(1036, 660);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label_docName);
@@ -408,6 +421,7 @@ namespace G5_HMS
             this.panel_patient.ResumeLayout(false);
             this.panel_patient.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -444,5 +458,6 @@ namespace G5_HMS
         private System.Windows.Forms.Label label_docName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

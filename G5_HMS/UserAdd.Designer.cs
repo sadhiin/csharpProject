@@ -326,7 +326,6 @@ namespace G5_HMS
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "UserAdd";
-            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserAdd";
             this.Load += new System.EventHandler(this.UserAdd_Load);
