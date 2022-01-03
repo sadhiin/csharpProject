@@ -58,7 +58,7 @@ namespace G5_HMS
             //SqlCommand cmd;
             try
             {
-                if (checkOldpass())
+                if (checkOldpass() == true)
                 {
                     string updatepass = "UPDATE user_table SET user_pass=@newpass WHERE user_id=@id";
                     DB.connection.Open();

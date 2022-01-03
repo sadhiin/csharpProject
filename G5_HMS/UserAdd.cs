@@ -179,7 +179,7 @@ namespace G5_HMS
 
         private void button_update_user_Click(object sender, EventArgs e)
         {
-            if(ValidInfo() && !string.IsNullOrWhiteSpace(textBox_User_id.Text))
+            if(ValidInfo())
             {
                 MyConnection DB = new MyConnection();
                 SqlCommand cmd;

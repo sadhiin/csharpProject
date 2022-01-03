@@ -36,25 +36,25 @@ namespace G5_HMS
             this.textBox_pid = new System.Windows.Forms.TextBox();
             this.label_exitingPatient = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label_top = new System.Windows.Forms.Label();
-            this.panel_top = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.comboBox_pBlood = new System.Windows.Forms.ComboBox();
+            this.label_pBlood = new System.Windows.Forms.Label();
+            this.textBox_tests = new System.Windows.Forms.TextBox();
+            this.label_pTests = new System.Windows.Forms.Label();
             this.label_pGender = new System.Windows.Forms.Label();
             this.comboBox_pGender = new System.Windows.Forms.ComboBox();
             this.textBox_pContract = new System.Windows.Forms.TextBox();
             this.textBox_pName = new System.Windows.Forms.TextBox();
             this.label_pContract = new System.Windows.Forms.Label();
             this.label_pname = new System.Windows.Forms.Label();
-            this.comboBox_pBlood = new System.Windows.Forms.ComboBox();
-            this.label_pBlood = new System.Windows.Forms.Label();
-            this.textBox_tests = new System.Windows.Forms.TextBox();
-            this.label_pTests = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label_top = new System.Windows.Forms.Label();
+            this.panel_top = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button_dLogout = new System.Windows.Forms.Button();
             this.button_changePassword = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panel_top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel_top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,6 +109,7 @@ namespace G5_HMS
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Gainsboro;
             this.panel1.Controls.Add(this.comboBox_pBlood);
             this.panel1.Controls.Add(this.label_pBlood);
             this.panel1.Controls.Add(this.textBox_tests);
@@ -120,54 +121,58 @@ namespace G5_HMS
             this.panel1.Controls.Add(this.label_pContract);
             this.panel1.Controls.Add(this.label_pname);
             this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Location = new System.Drawing.Point(421, 120);
+            this.panel1.Location = new System.Drawing.Point(407, 111);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(538, 508);
             this.panel1.TabIndex = 16;
             // 
-            // label_top
+            // comboBox_pBlood
             // 
-            this.label_top.AutoSize = true;
-            this.label_top.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_top.Location = new System.Drawing.Point(339, 20);
-            this.label_top.Name = "label_top";
-            this.label_top.Size = new System.Drawing.Size(321, 39);
-            this.label_top.TabIndex = 0;
-            this.label_top.Text = "Welcome Laboratorian";
+            this.comboBox_pBlood.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_pBlood.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.comboBox_pBlood.FormattingEnabled = true;
+            this.comboBox_pBlood.Items.AddRange(new object[] {
+            "A+ve",
+            "B+ve",
+            "AB+ve",
+            "O+ve",
+            "O-ve",
+            "AB-ve",
+            "A-ve",
+            "B-ve"});
+            this.comboBox_pBlood.Location = new System.Drawing.Point(158, 174);
+            this.comboBox_pBlood.Name = "comboBox_pBlood";
+            this.comboBox_pBlood.Size = new System.Drawing.Size(155, 28);
+            this.comboBox_pBlood.TabIndex = 27;
             // 
-            // panel_top
+            // label_pBlood
             // 
-            this.panel_top.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.panel_top.Controls.Add(this.label_top);
-            this.panel_top.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_top.Location = new System.Drawing.Point(0, 0);
-            this.panel_top.Name = "panel_top";
-            this.panel_top.Size = new System.Drawing.Size(1030, 77);
-            this.panel_top.TabIndex = 17;
+            this.label_pBlood.AutoSize = true;
+            this.label_pBlood.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_pBlood.Location = new System.Drawing.Point(37, 174);
+            this.label_pBlood.Name = "label_pBlood";
+            this.label_pBlood.Size = new System.Drawing.Size(103, 20);
+            this.label_pBlood.TabIndex = 28;
+            this.label_pBlood.Text = "Blood Group";
             // 
-            // dataGridView1
+            // textBox_tests
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(369, 372);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 18;
-            this.dataGridView1.Visible = false;
+            this.textBox_tests.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.textBox_tests.Location = new System.Drawing.Point(158, 224);
+            this.textBox_tests.Multiline = true;
+            this.textBox_tests.Name = "textBox_tests";
+            this.textBox_tests.Size = new System.Drawing.Size(317, 142);
+            this.textBox_tests.TabIndex = 26;
             // 
-            // pictureBox1
+            // label_pTests
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 111);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(167, 136);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.label_pTests.AutoSize = true;
+            this.label_pTests.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_pTests.Location = new System.Drawing.Point(50, 277);
+            this.label_pTests.Name = "label_pTests";
+            this.label_pTests.Size = new System.Drawing.Size(51, 20);
+            this.label_pTests.TabIndex = 25;
+            this.label_pTests.Text = "Tests";
             // 
             // label_pGender
             // 
@@ -229,53 +234,49 @@ namespace G5_HMS
             this.label_pname.TabIndex = 20;
             this.label_pname.Text = "Name";
             // 
-            // comboBox_pBlood
+            // dataGridView1
             // 
-            this.comboBox_pBlood.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_pBlood.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.comboBox_pBlood.FormattingEnabled = true;
-            this.comboBox_pBlood.Items.AddRange(new object[] {
-            "A+ve",
-            "B+ve",
-            "AB+ve",
-            "O+ve",
-            "O-ve",
-            "AB-ve",
-            "A-ve",
-            "B-ve"});
-            this.comboBox_pBlood.Location = new System.Drawing.Point(158, 174);
-            this.comboBox_pBlood.Name = "comboBox_pBlood";
-            this.comboBox_pBlood.Size = new System.Drawing.Size(155, 28);
-            this.comboBox_pBlood.TabIndex = 27;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(369, 372);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.TabIndex = 18;
+            this.dataGridView1.Visible = false;
             // 
-            // label_pBlood
+            // label_top
             // 
-            this.label_pBlood.AutoSize = true;
-            this.label_pBlood.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_pBlood.Location = new System.Drawing.Point(37, 174);
-            this.label_pBlood.Name = "label_pBlood";
-            this.label_pBlood.Size = new System.Drawing.Size(103, 20);
-            this.label_pBlood.TabIndex = 28;
-            this.label_pBlood.Text = "Blood Group";
+            this.label_top.AutoSize = true;
+            this.label_top.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_top.Location = new System.Drawing.Point(339, 20);
+            this.label_top.Name = "label_top";
+            this.label_top.Size = new System.Drawing.Size(321, 39);
+            this.label_top.TabIndex = 0;
+            this.label_top.Text = "Welcome Laboratorian";
             // 
-            // textBox_tests
+            // panel_top
             // 
-            this.textBox_tests.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.textBox_tests.Location = new System.Drawing.Point(158, 224);
-            this.textBox_tests.Multiline = true;
-            this.textBox_tests.Name = "textBox_tests";
-            this.textBox_tests.Size = new System.Drawing.Size(317, 142);
-            this.textBox_tests.TabIndex = 26;
+            this.panel_top.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.panel_top.Controls.Add(this.label_top);
+            this.panel_top.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_top.Location = new System.Drawing.Point(0, 0);
+            this.panel_top.Name = "panel_top";
+            this.panel_top.Size = new System.Drawing.Size(1030, 77);
+            this.panel_top.TabIndex = 17;
             // 
-            // label_pTests
+            // pictureBox1
             // 
-            this.label_pTests.AutoSize = true;
-            this.label_pTests.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_pTests.Location = new System.Drawing.Point(50, 277);
-            this.label_pTests.Name = "label_pTests";
-            this.label_pTests.Size = new System.Drawing.Size(51, 20);
-            this.label_pTests.TabIndex = 25;
-            this.label_pTests.Text = "Tests";
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 111);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(167, 136);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // button_dLogout
             // 
@@ -316,6 +317,7 @@ namespace G5_HMS
             this.Controls.Add(this.label_laboName);
             this.Controls.Add(this.label_hello);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Laboratorian";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -323,9 +325,9 @@ namespace G5_HMS
             this.Load += new System.EventHandler(this.Laboratorian_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel_top.ResumeLayout(false);
             this.panel_top.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

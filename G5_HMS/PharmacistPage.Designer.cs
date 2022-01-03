@@ -38,17 +38,17 @@ namespace G5_HMS
             this.button_dLogout = new System.Windows.Forms.Button();
             this.button_changePassword = new System.Windows.Forms.Button();
             this.panel_addDrugs = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label_Dname = new System.Windows.Forms.Label();
-            this.label_dprice = new System.Windows.Forms.Label();
-            this.textBox_Dname = new System.Windows.Forms.TextBox();
-            this.textBox_dPrice = new System.Windows.Forms.TextBox();
             this.button_dAdd = new System.Windows.Forms.Button();
-            this.label_Fdname = new System.Windows.Forms.Label();
-            this.textBox_F_dname = new System.Windows.Forms.TextBox();
-            this.button_find = new System.Windows.Forms.Button();
-            this.label_Dstock = new System.Windows.Forms.Label();
             this.textBox_dStock = new System.Windows.Forms.TextBox();
+            this.textBox_dPrice = new System.Windows.Forms.TextBox();
+            this.label_Dstock = new System.Windows.Forms.Label();
+            this.textBox_Dname = new System.Windows.Forms.TextBox();
+            this.label_dprice = new System.Windows.Forms.Label();
+            this.label_Dname = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button_find = new System.Windows.Forms.Button();
+            this.textBox_F_dname = new System.Windows.Forms.TextBox();
+            this.label_Fdname = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel_top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -146,53 +146,6 @@ namespace G5_HMS
             this.panel_addDrugs.Size = new System.Drawing.Size(410, 202);
             this.panel_addDrugs.TabIndex = 23;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Tan;
-            this.panel1.Controls.Add(this.button_find);
-            this.panel1.Controls.Add(this.textBox_F_dname);
-            this.panel1.Controls.Add(this.label_Fdname);
-            this.panel1.Location = new System.Drawing.Point(225, 83);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(410, 202);
-            this.panel1.TabIndex = 24;
-            // 
-            // label_Dname
-            // 
-            this.label_Dname.AutoSize = true;
-            this.label_Dname.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Dname.Location = new System.Drawing.Point(31, 16);
-            this.label_Dname.Name = "label_Dname";
-            this.label_Dname.Size = new System.Drawing.Size(61, 23);
-            this.label_Dname.TabIndex = 19;
-            this.label_Dname.Text = "Name";
-            // 
-            // label_dprice
-            // 
-            this.label_dprice.AutoSize = true;
-            this.label_dprice.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_dprice.Location = new System.Drawing.Point(31, 63);
-            this.label_dprice.Name = "label_dprice";
-            this.label_dprice.Size = new System.Drawing.Size(54, 23);
-            this.label_dprice.TabIndex = 19;
-            this.label_dprice.Text = "Price";
-            // 
-            // textBox_Dname
-            // 
-            this.textBox_Dname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.textBox_Dname.Location = new System.Drawing.Point(122, 16);
-            this.textBox_Dname.Name = "textBox_Dname";
-            this.textBox_Dname.Size = new System.Drawing.Size(257, 27);
-            this.textBox_Dname.TabIndex = 20;
-            // 
-            // textBox_dPrice
-            // 
-            this.textBox_dPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.textBox_dPrice.Location = new System.Drawing.Point(122, 59);
-            this.textBox_dPrice.Name = "textBox_dPrice";
-            this.textBox_dPrice.Size = new System.Drawing.Size(257, 27);
-            this.textBox_dPrice.TabIndex = 20;
-            // 
             // button_dAdd
             // 
             this.button_dAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
@@ -204,23 +157,70 @@ namespace G5_HMS
             this.button_dAdd.UseVisualStyleBackColor = true;
             this.button_dAdd.Click += new System.EventHandler(this.button_dAdd_Click);
             // 
-            // label_Fdname
+            // textBox_dStock
             // 
-            this.label_Fdname.AutoSize = true;
-            this.label_Fdname.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Fdname.Location = new System.Drawing.Point(30, 32);
-            this.label_Fdname.Name = "label_Fdname";
-            this.label_Fdname.Size = new System.Drawing.Size(61, 23);
-            this.label_Fdname.TabIndex = 19;
-            this.label_Fdname.Text = "Name";
+            this.textBox_dStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.textBox_dStock.Location = new System.Drawing.Point(122, 98);
+            this.textBox_dStock.Name = "textBox_dStock";
+            this.textBox_dStock.Size = new System.Drawing.Size(257, 27);
+            this.textBox_dStock.TabIndex = 20;
             // 
-            // textBox_F_dname
+            // textBox_dPrice
             // 
-            this.textBox_F_dname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.textBox_F_dname.Location = new System.Drawing.Point(121, 32);
-            this.textBox_F_dname.Name = "textBox_F_dname";
-            this.textBox_F_dname.Size = new System.Drawing.Size(257, 27);
-            this.textBox_F_dname.TabIndex = 20;
+            this.textBox_dPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.textBox_dPrice.Location = new System.Drawing.Point(122, 59);
+            this.textBox_dPrice.Name = "textBox_dPrice";
+            this.textBox_dPrice.Size = new System.Drawing.Size(257, 27);
+            this.textBox_dPrice.TabIndex = 20;
+            // 
+            // label_Dstock
+            // 
+            this.label_Dstock.AutoSize = true;
+            this.label_Dstock.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Dstock.Location = new System.Drawing.Point(31, 98);
+            this.label_Dstock.Name = "label_Dstock";
+            this.label_Dstock.Size = new System.Drawing.Size(57, 23);
+            this.label_Dstock.TabIndex = 19;
+            this.label_Dstock.Text = "Stock";
+            // 
+            // textBox_Dname
+            // 
+            this.textBox_Dname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.textBox_Dname.Location = new System.Drawing.Point(122, 16);
+            this.textBox_Dname.Name = "textBox_Dname";
+            this.textBox_Dname.Size = new System.Drawing.Size(257, 27);
+            this.textBox_Dname.TabIndex = 20;
+            // 
+            // label_dprice
+            // 
+            this.label_dprice.AutoSize = true;
+            this.label_dprice.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_dprice.Location = new System.Drawing.Point(31, 63);
+            this.label_dprice.Name = "label_dprice";
+            this.label_dprice.Size = new System.Drawing.Size(54, 23);
+            this.label_dprice.TabIndex = 19;
+            this.label_dprice.Text = "Price";
+            // 
+            // label_Dname
+            // 
+            this.label_Dname.AutoSize = true;
+            this.label_Dname.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Dname.Location = new System.Drawing.Point(31, 16);
+            this.label_Dname.Name = "label_Dname";
+            this.label_Dname.Size = new System.Drawing.Size(61, 23);
+            this.label_Dname.TabIndex = 19;
+            this.label_Dname.Text = "Name";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Tan;
+            this.panel1.Controls.Add(this.button_find);
+            this.panel1.Controls.Add(this.textBox_F_dname);
+            this.panel1.Controls.Add(this.label_Fdname);
+            this.panel1.Location = new System.Drawing.Point(225, 83);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(410, 202);
+            this.panel1.TabIndex = 24;
             // 
             // button_find
             // 
@@ -233,23 +233,23 @@ namespace G5_HMS
             this.button_find.UseVisualStyleBackColor = true;
             this.button_find.Click += new System.EventHandler(this.button_find_Click);
             // 
-            // label_Dstock
+            // textBox_F_dname
             // 
-            this.label_Dstock.AutoSize = true;
-            this.label_Dstock.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Dstock.Location = new System.Drawing.Point(31, 98);
-            this.label_Dstock.Name = "label_Dstock";
-            this.label_Dstock.Size = new System.Drawing.Size(57, 23);
-            this.label_Dstock.TabIndex = 19;
-            this.label_Dstock.Text = "Stock";
+            this.textBox_F_dname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.textBox_F_dname.Location = new System.Drawing.Point(121, 32);
+            this.textBox_F_dname.Name = "textBox_F_dname";
+            this.textBox_F_dname.Size = new System.Drawing.Size(257, 27);
+            this.textBox_F_dname.TabIndex = 20;
             // 
-            // textBox_dStock
+            // label_Fdname
             // 
-            this.textBox_dStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.textBox_dStock.Location = new System.Drawing.Point(122, 98);
-            this.textBox_dStock.Name = "textBox_dStock";
-            this.textBox_dStock.Size = new System.Drawing.Size(257, 27);
-            this.textBox_dStock.TabIndex = 20;
+            this.label_Fdname.AutoSize = true;
+            this.label_Fdname.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Fdname.Location = new System.Drawing.Point(30, 32);
+            this.label_Fdname.Name = "label_Fdname";
+            this.label_Fdname.Size = new System.Drawing.Size(61, 23);
+            this.label_Fdname.TabIndex = 19;
+            this.label_Fdname.Text = "Name";
             // 
             // dataGridView1
             // 
@@ -269,7 +269,7 @@ namespace G5_HMS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1083, 556);
+            this.ClientSize = new System.Drawing.Size(1083, 566);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel_addDrugs);

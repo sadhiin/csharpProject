@@ -87,7 +87,7 @@ namespace G5_HMS
         }
         private void button_dAdd_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(textBox_Dname.Text) == false && string.IsNullOrWhiteSpace(textBox_dPrice.Text) == false && string.IsNullOrWhiteSpace(textBox_dStock.Text)) 
+            if (string.IsNullOrWhiteSpace(textBox_Dname.Text) == false && string.IsNullOrWhiteSpace(textBox_dPrice.Text) == false && string.IsNullOrWhiteSpace(textBox_dStock.Text) == false) 
             {
                 MyConnection DB = new MyConnection();
                 SqlCommand cmd;
@@ -101,6 +101,7 @@ namespace G5_HMS
                     cmd.Parameters.AddWithValue("@stk", int.Parse(textBox_dStock.Text));
                     cmd.ExecuteNonQuery();
                     DB.connection.Close();
+                    showDrugs();
                     MessageBox.Show("Saved");
                     clearTextfiled();
                 }
@@ -112,6 +113,10 @@ namespace G5_HMS
                 {
                     DB.connection.Close();
                 }
+            }
+            else
+            {
+                MessageBox.Show("Name and price requard....");
             }
         }
 
@@ -130,7 +135,7 @@ namespace G5_HMS
             try
             {
                 DB.connection.Open();
-                string s = "SELECT * FROM drug_table WHERE d_name= '%@nam%'";
+                string s = "SELECT d_id AS ID, d_name AS Name, d_price AS Price, stock AS Available FROM drug_table WHERE d_name LIKE '%@nam%'";
                 cmd = new SqlCommand(s, DB.connection);
                 cmd.Parameters.AddWithValue("@nam", textBox_F_dname.Text);
                 DataTable dt = new DataTable();

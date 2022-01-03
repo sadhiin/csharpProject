@@ -15,3 +15,4 @@ E:\CsharpProject\G5_HMS\obj\Debug\G5_HMS.updatePass.resources
 E:\CsharpProject\G5_HMS\obj\Debug\G5_HMS.NursePage.resources
 E:\CsharpProject\G5_HMS\obj\Debug\G5_HMS.Laboratorian.resources
 E:\CsharpProject\G5_HMS\obj\Debug\G5_HMS.ReceptionistPage.resources
+E:\CsharpProject\G5_HMS\obj\Debug\G5_HMS.PharmacistPage.resources

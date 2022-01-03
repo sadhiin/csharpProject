@@ -79,6 +79,9 @@ namespace G5_HMS
                         else if (type == 6)
                         {
                             //user is pharmacist
+                            PharmacistPage phpage = new PharmacistPage();
+                            phpage.Show();
+                            this.Hide();
                         }
                     }
                     else
