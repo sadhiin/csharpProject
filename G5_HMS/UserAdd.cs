@@ -191,7 +191,7 @@ namespace G5_HMS
                     SDA.Fill(dt);
                     DB.connection.Close();
 
-                    if (dt.Rows[0][0].ToString()=="1")
+                    if (dt.Rows[0][0].ToString() == "1")
                     {
                         string updatequery = "UPDATE user_table SET user_pass=@pass,role_type=@role,name=@NewName,address=@NewAddress,gender=@newGender,phone=@newPhone,nid=@newNid,schedule=@newsche WHERE user_id=@id";
                         cmd = new SqlCommand(updatequery, DB.connection);
