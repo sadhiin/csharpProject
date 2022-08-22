@@ -17,7 +17,7 @@ namespace HMS
         {
             InitializeComponent();
         }
-
+//SQL connection
         SqlConnection connection = new SqlConnection("Data Source=DESKTOP-9KAR832;Initial Catalog=hopitalMS;User ID=sa;Password=123456789");
         SqlCommand cmd;
         void openConnetion()
