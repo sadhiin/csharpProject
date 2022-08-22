@@ -23,8 +23,5 @@ namespace HospitalMgnt
             MessageBox.Show("Done....");
         }
         //Functionality for Add button
-        
-
-        
     }
 }
